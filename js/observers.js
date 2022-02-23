@@ -1,4 +1,14 @@
+import digital from '../img/digital.jpg';
+import grow from '../img/grow.jpg';
+import card from '../img/card.jpg';
+
 const observersFunction = function () {
+  const importImgs = {
+    digitalP: digital,
+    growP: grow,
+    cardP: card,
+  };
+
   const header = document.querySelector('.header');
 
   const nav = document.querySelector('.nav');
@@ -36,7 +46,8 @@ const observersFunction = function () {
 
     if (!entry.isIntersecting) return;
 
-    entry.target.src = entry.target.dataset.src;
+    // Bundler img probem
+    entry.target.src = importImgs[entry.target.dataset.src];
 
     entry.target.addEventListener('load', function () {
       entry.target.classList.remove('lazy-img');
