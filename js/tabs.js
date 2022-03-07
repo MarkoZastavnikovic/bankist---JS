@@ -1,4 +1,4 @@
-const tabsFunction = function () {
+const Tabs = function () {
   const tabs = document.querySelectorAll('.operations__tab');
   const tabsContainer = document.querySelector('.operations__tab-container');
   const tabsContent = document.querySelectorAll('.operations__content');
@@ -19,4 +19,4 @@ const tabsFunction = function () {
   });
 };
 
-export default tabsFunction;
+export default Tabs;

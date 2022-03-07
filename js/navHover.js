@@ -1,4 +1,4 @@
-const navigationHover = function () {
+const NavHover = function () {
   const nav = document.querySelector('.nav');
 
   const handleHover = function (e) {
@@ -19,4 +19,4 @@ const navigationHover = function () {
   nav.addEventListener('mouseout', handleHover.bind(1));
 };
 
-export default navigationHover;
+export default NavHover;

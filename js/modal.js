@@ -1,4 +1,4 @@
-const modalFunction = function () {
+const Modal = function () {
   const modal = document.querySelector('.modal');
   const overlay = document.querySelector('.overlay');
   const btnCloseModal = document.querySelector('.btn--close-modal');
@@ -30,4 +30,4 @@ const modalFunction = function () {
   });
 };
 
-export default modalFunction;
+export default Modal;

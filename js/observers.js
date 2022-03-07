@@ -2,7 +2,7 @@ import digital from '../img/digital.jpg';
 import grow from '../img/grow.jpg';
 import card from '../img/card.jpg';
 
-const observersFunction = function () {
+const Observers = function () {
   const importImgs = {
     digitalP: digital,
     growP: grow,
@@ -46,7 +46,7 @@ const observersFunction = function () {
 
     if (!entry.isIntersecting) return;
 
-    // Bundler img probem
+    // Bundler img problem
     entry.target.src = importImgs[entry.target.dataset.src];
 
     entry.target.addEventListener('load', function () {
@@ -86,4 +86,4 @@ const observersFunction = function () {
   observer.observe(header);
 };
 
-export default observersFunction;
+export default Observers;
