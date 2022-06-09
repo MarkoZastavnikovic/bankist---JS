@@ -3,9 +3,9 @@
 import Slider from './slider.js';
 import Tabs from './tabs.js';
 import Modal from './modal.js';
-import NavHover from './navHover.js';
+import NavHover from './nav-hover.js';
 import Observers from './observers.js';
-import ScrollSections from './scrollSections.js';
+import ScrollSections from './scroll-sections.js';
 
 const allSections = document.querySelectorAll('.section');
 
